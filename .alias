@@ -1,0 +1,22 @@
+#! /usr/bin/env bash
+
+# System Overrides:
+ alias ls='pwd; ls -lash'
+ alias ll='"ls"'
+ alias cp='cp -riv'
+ alias rm='rm -i'
+ alias mv='mv -i'
+ alias ..="cd .."
+ alias ...="cd ../.."
+ alias cd..="cd .."
+ 
+ alias please='sudo'
+ alias caf='echo "no sleep..."; echo "ctl + c to exit"; caffeina   te -d'
+
+# Shortcuts:
+ alias dl='diskutil'
+ alias ff='pwd; "ls" -las | grep -i'
+ alias hello='echo "hello world"'
+ alias hash='md5 -q'
+ alias emptyTrash='sudo rm -R ~/.Trash/'
+ alias dfc="df -h / --output=source,fstype,size,used,avail,pcent"
