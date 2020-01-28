@@ -7,8 +7,8 @@
 
 #! /usr/bin/env bash
 
-if [ -e ~/.bash_profie ]; then
-	prof='~/.bash_profile'
+if [ -e ~/.profie ]; then
+	prof='~/.profile'
 else
 	echo " [ERROR] No profile was found --EXIT"
 fi
@@ -22,7 +22,7 @@ alias profile--view="cat ~/$prof"
 alias profile--edit="vim ~/$prof"
 alias profile--info="uname -a; uptime"
 alias profile--default="sh /Users/craigcarter/Profile/.dotfiles/.profile-blank.sh"
-alias profile--reset="source ~/.bash_profile"
+alias profile--reset="source ~/$prof"
 
 # Get config files
 source "/Users/admin/Profile/.dotfiles/.alias"
