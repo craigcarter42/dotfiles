@@ -3,3 +3,13 @@
 function preman() {
 	man -t $@ | open -f -a "Preview"
 }
+
+function pub-key() {
+	pbcopy < ~/.ssh/id_rsa.pub
+	cat ~/.ssh/id_rsa.pub
+}
+
+function private-key() {
+	pbcopy < ~/.ssh/id_rsa
+	cat ~/.ssh/id_rsa
+}
